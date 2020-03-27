@@ -1,0 +1,41 @@
+﻿@model IEnumerable<FootballCalc.Models.Players>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PlayerTeam)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PlayerCost)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlayerTeam)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlayerCost)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PlayerName">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PlayerName">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PlayerName">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
