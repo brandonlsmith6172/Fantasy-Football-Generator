@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc.Test\\FootballCalc.Test.csproj": {}
+    "C:\\Users\\moore\\OneDrive\\Documents\\GitHub2\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc.Test\\FootballCalc.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc.Test\\FootballCalc.Test.csproj": {
+    "C:\\Users\\moore\\OneDrive\\Documents\\GitHub2\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc.Test\\FootballCalc.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc.Test\\FootballCalc.Test.csproj",
+        "projectUniqueName": "C:\\Users\\moore\\OneDrive\\Documents\\GitHub2\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc.Test\\FootballCalc.Test.csproj",
         "projectName": "FootballCalc.Test",
-        "projectPath": "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc.Test\\FootballCalc.Test.csproj",
-        "packagesPath": "C:\\Users\\deyas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc.Test\\obj\\",
+        "projectPath": "C:\\Users\\moore\\OneDrive\\Documents\\GitHub2\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc.Test\\FootballCalc.Test.csproj",
+        "packagesPath": "C:\\Users\\moore\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\moore\\OneDrive\\Documents\\GitHub2\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\deyas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\moore\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +31,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj": {
-                "projectPath": "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj"
+              "C:\\Users\\moore\\OneDrive\\Documents\\GitHub2\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj": {
+                "projectPath": "C:\\Users\\moore\\OneDrive\\Documents\\GitHub2\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj"
               }
             }
           }
@@ -82,25 +81,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj": {
+    "C:\\Users\\moore\\OneDrive\\Documents\\GitHub2\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj",
+        "projectUniqueName": "C:\\Users\\moore\\OneDrive\\Documents\\GitHub2\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj",
         "projectName": "FootballCalc",
-        "projectPath": "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj",
-        "packagesPath": "C:\\Users\\deyas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\obj\\",
+        "projectPath": "C:\\Users\\moore\\OneDrive\\Documents\\GitHub2\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj",
+        "packagesPath": "C:\\Users\\moore\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\moore\\OneDrive\\Documents\\GitHub2\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\deyas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\moore\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -176,7 +174,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

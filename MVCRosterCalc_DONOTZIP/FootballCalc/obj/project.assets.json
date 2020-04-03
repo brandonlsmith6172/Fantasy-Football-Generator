@@ -8981,25 +8981,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\deyas\\.nuget\\packages\\": {},
-    "D:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\moore\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj",
+      "projectUniqueName": "C:\\Users\\moore\\OneDrive\\Documents\\GitHub2\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj",
       "projectName": "FootballCalc",
-      "projectPath": "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj",
-      "packagesPath": "C:\\Users\\deyas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\obj\\",
+      "projectPath": "C:\\Users\\moore\\OneDrive\\Documents\\GitHub2\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj",
+      "packagesPath": "C:\\Users\\moore\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\moore\\OneDrive\\Documents\\GitHub2\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\deyas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\moore\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -9075,7 +9073,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
