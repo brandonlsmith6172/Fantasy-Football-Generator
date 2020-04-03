@@ -2,9 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\MVCRosterCalc_DONOTZIP",
-    "\\MVCRosterCalc_DONOTZIP\\FootballCalc",
-    "\\MVCRosterCalc_DONOTZIP\\FootballCalc\\Controllers"
+    "\\MVCRosterCalc_DONOTZIP\\FootballCalc.Test\\bin",
+    "\\MVCRosterCalc_DONOTZIP\\FootballCalc\\bin\\Release",
+    "\\MVCRosterCalc_DONOTZIP\\FootballCalc\\bin\\Release\\netcoreapp3.1",
+    "\\MVCRosterCalc_DONOTZIP\\FootballCalc\\Controllers",
+    "\\MVCRosterCalc_DONOTZIP\\FootballCalc\\obj\\Debug",
+    "\\MVCRosterCalc_DONOTZIP\\FootballCalc\\obj\\Debug\\netcoreapp3.1",
+    "\\MVCRosterCalc_DONOTZIP\\FootballCalc\\Views",
+    "\\MVCRosterCalc_DONOTZIP\\Images"
   ],
-  "SelectedNode": "\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.sln",
+  "SelectedNode": "\\HTMLFUND.html",
   "PreviewInSolutionExplorer": false
 }

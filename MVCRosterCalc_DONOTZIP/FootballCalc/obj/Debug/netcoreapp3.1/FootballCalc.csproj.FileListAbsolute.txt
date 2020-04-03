@@ -320,7 +320,6 @@ C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZI
 C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\FootballCalc.csprojAssemblyReference.cache
 C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\staticwebassets\FootballCalc.StaticWebAssets.Manifest.cache
 C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\staticwebassets\FootballCalc.StaticWebAssets.xml
 C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\FootballCalc.MvcApplicationPartsAssemblyInfo.cache
@@ -351,6 +350,5 @@ C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZI
 C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\FootballCalc.dll
 C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\FootballCalc.pdb
 C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
-C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\Razor\Views\Home\Register.cshtml.g.cs
 C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\Razor\Views\Home\LoginValidated.cshtml.g.cs
 C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\Razor\Views\Home\LoginFailed.cshtml.g.cs
