@@ -352,3 +352,13 @@ C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZI
 C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
 C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\Razor\Views\Home\LoginValidated.cshtml.g.cs
 C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\Razor\Views\Home\LoginFailed.cshtml.g.cs
+C:\Users\chjay\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\FootballCalc.csprojAssemblyReference.cache
+C:\Users\chjay\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\staticwebassets\FootballCalc.StaticWebAssets.Manifest.cache
+C:\Users\chjay\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\staticwebassets\FootballCalc.StaticWebAssets.xml
+C:\Users\chjay\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\FootballCalc.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\chjay\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\FootballCalc.RazorAssemblyInfo.cache
+C:\Users\chjay\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\FootballCalc.RazorAssemblyInfo.cs
+C:\Users\chjay\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\FootballCalc.AssemblyInfoInputs.cache
+C:\Users\chjay\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\FootballCalc.AssemblyInfo.cs
+C:\Users\chjay\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\FootballCalc.dll
+C:\Users\chjay\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\FootballCalc.pdb
