@@ -32,15 +32,15 @@ namespace FootballCalc.Controllers
         {
             return View();
         }
-        [HttpPost]
+        //[HttpPost]
         public IActionResult Register()
         {
-            data.UserName(n);
-            data.Password(p);
-            data.FName(fn);
-            data.LName(ln);
-            data.EmailAddress(ea);
-            data.DateOfBirth(dob);
+            //data.UserName(n);
+            //data.Password(p);
+            //data.FName(fn);
+            //data.LName(ln);
+            //data.EmailAddress(ea);
+            //data.DateOfBirth(dob);
             return View();
         }
         public IActionResult LoginFailed()
