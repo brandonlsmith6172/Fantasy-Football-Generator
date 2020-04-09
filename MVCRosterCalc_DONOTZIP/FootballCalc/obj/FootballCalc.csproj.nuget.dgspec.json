@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\moore\\OneDrive\\Documents\\GitHub2\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj": {}
+    "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\moore\\OneDrive\\Documents\\GitHub2\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj": {
+    "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\moore\\OneDrive\\Documents\\GitHub2\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj",
+        "projectUniqueName": "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj",
         "projectName": "FootballCalc",
-        "projectPath": "C:\\Users\\moore\\OneDrive\\Documents\\GitHub2\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj",
-        "packagesPath": "C:\\Users\\moore\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\moore\\OneDrive\\Documents\\GitHub2\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\obj\\",
+        "projectPath": "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\FootballCalc.csproj",
+        "packagesPath": "C:\\Users\\deyas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\moore\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\deyas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -93,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
