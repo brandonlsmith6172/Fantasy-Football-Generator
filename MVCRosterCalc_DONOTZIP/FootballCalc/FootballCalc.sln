@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FootballCalc", "FootballCal
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FootballCalc.Test", "..\FootballCalc.Test\FootballCalc.Test.csproj", "{DDDCFA35-7452-4466-B5FF-CD81A3D5D41D}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "FootBallDb", "..\FootBallDb\FootBallDb.sqlproj", "{982E0610-F4BB-4ADC-8B80-A10536A3C719}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +21,6 @@ Global
 		{DDDCFA35-7452-4466-B5FF-CD81A3D5D41D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDDCFA35-7452-4466-B5FF-CD81A3D5D41D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDDCFA35-7452-4466-B5FF-CD81A3D5D41D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{982E0610-F4BB-4ADC-8B80-A10536A3C719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{982E0610-F4BB-4ADC-8B80-A10536A3C719}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{982E0610-F4BB-4ADC-8B80-A10536A3C719}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{982E0610-F4BB-4ADC-8B80-A10536A3C719}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{982E0610-F4BB-4ADC-8B80-A10536A3C719}.Release|Any CPU.Build.0 = Release|Any CPU
-		{982E0610-F4BB-4ADC-8B80-A10536A3C719}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

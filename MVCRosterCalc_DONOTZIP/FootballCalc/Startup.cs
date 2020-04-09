@@ -26,8 +26,8 @@ namespace FootballCalc
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<PlayersContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("PlayersContext")));
+            //services.AddDbContext<PlayersContext>(options =>
+            //options.UseSqlServer(Configuration.GetConnectionString("PlayersContext")));
 
             services.AddDbContext<FootballCalcContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("FootballCalcContext")));
