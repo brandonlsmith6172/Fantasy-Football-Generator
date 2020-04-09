@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using FootballCalc.Data;
 using Microsoft.EntityFrameworkCore;
+using FootballCalc.Models;
 
 namespace FootballCalc
 {
@@ -21,6 +22,7 @@ namespace FootballCalc
         }
 
         public IConfiguration Configuration { get; }
+        
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -28,6 +30,7 @@ namespace FootballCalc
             services.AddControllersWithViews();
             services.AddDbContext<PlayersContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("PlayersContext")));
+            services.AddTransient<IFootballRepository>();
 
             services.AddDbContext<FootballCalcContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("FootballCalcContext")));
