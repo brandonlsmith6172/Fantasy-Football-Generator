@@ -1,6 +1,37 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+        }
+        .column {
+            float: left;
+            width: 33.33%;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer {
+            background-color: #F1F1F1;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Fantasy Roster Calculator</title>
@@ -8,6 +39,10 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
+    <div class="wrapper">
+        <h1>Home Page</h1>
+        <img src="~/Images/nflwall.png">
+    </div>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
