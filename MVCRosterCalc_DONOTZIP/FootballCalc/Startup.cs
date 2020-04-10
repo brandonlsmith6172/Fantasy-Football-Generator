@@ -27,9 +27,10 @@ namespace FootballCalc
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<IFootballRepository, FakeFootballRepository>();
             services.AddControllersWithViews();
-            services.AddDbContext<PlayersContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("PlayersContext")));
+            services.AddDbContext<FootballCalcContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("FootballCalcContext")));
             services.AddTransient<IFootballRepository>();
 
             services.AddDbContext<FootballCalcContext>(options =>
@@ -60,7 +61,7 @@ namespace FootballCalc
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Register}/{action=userlist}/{id?}");
             });
         }
     }

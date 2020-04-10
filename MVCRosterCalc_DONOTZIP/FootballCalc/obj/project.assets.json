@@ -8986,7 +8986,9 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\deyas\\.nuget\\packages\\": {}
+    "C:\\Users\\deyas\\.nuget\\packages\\": {},
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -8997,9 +8999,14 @@
       "packagesPath": "C:\\Users\\deyas\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\deyas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

@@ -542,3 +542,5 @@ C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZI
 C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\FootballCalc.csproj.CopyComplete
 C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\FootballCalc.dll
 C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\FootballCalc.pdb
+C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\FootballCalc.csprojAssemblyReference.cache
+C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\Razor\Views\Home\usertest\userlist.cshtml.g.cs
