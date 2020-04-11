@@ -7,7 +7,7 @@ namespace FootballCalc.Models
 {
     public interface IFootballRepository
     {
-        IQueryable<UserModel> UserModels { get; }
+        IQueryable<UserModel> Users { get; }
         //IQueryable<UserModel> Username { get; }
         //IQueryable<UserModel> Password { get; }
         //IQueryable<UserModel> First_Name { get; }

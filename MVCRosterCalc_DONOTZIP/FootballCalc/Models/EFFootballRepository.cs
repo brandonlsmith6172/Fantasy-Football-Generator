@@ -16,7 +16,7 @@ namespace FootballCalc.Models
 
             //public IQueryable<UserModel> users => context.users;
 
-        public IQueryable<UserModel> UserModels => context.UserModels;
+        public IQueryable<UserModel> Users => context.Users;
 
         //public IQueryable<UserModel> Password => throw new NotImplementedException();
 

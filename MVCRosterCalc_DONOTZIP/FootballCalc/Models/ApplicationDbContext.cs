@@ -11,7 +11,7 @@ namespace FootballCalc.Models
             public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
                 : base(options) { }
 
-        public DbSet<UserModel> UserModels { get; set; }
+        public DbSet<UserModel> Users { get; set; }
        
     }
     }

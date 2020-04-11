@@ -11,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using FootballCalc.Data;
 using Microsoft.EntityFrameworkCore;
 using FootballCalc.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace FootballCalc
 {
@@ -28,13 +29,17 @@ namespace FootballCalc
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IFootballRepository, FakeFootballRepository>();
-            services.AddControllersWithViews();
-            services.AddDbContext<FootballCalcContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("FootballCalcContext")));
-            services.AddTransient<IFootballRepository>();
+            services.AddMvc();
+            //services.AddControllersWithViews();
+            //services.AddDbContext<FootballCalcContext>(options =>
+            //options.UseSqlServer(Configuration.GetConnectionString("FootballCalcContext")));
+            //services.AddTransient<IFootballRepository>();
 
-            services.AddDbContext<FootballCalcContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("FootballCalcContext")));
+            ////services.AddDbContext<FootballCalcContext>(options =>
+            ////        options.UseSqlServer(Configuration.GetConnectionString("FootballCalcContext")));
+            ////services.AddTransient<IFootballRepository, FakeFootballRepository>();
+            ////services.AddMvc();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,11 +62,16 @@ namespace FootballCalc
 
             app.UseAuthorization();
 
+            //app.UseMvc(routes => {
+            //    routes.MapRoute(
+            //        name: "default",
+            //        template: "{controller=Register}/{action=Userlist}/{id?}");
+            //});
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Register}/{action=userlist}/{id?}");
+                    pattern: "{controller=Home}/{action=List}/{id?}");
             });
         }
     }
