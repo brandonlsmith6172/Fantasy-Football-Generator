@@ -1,3 +1,17 @@
 ﻿body {
     background-color: lightsteelblue;
 }
+.reg-pg {
+    background-image: url('images/regpg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.login-pg {
+    background-image: url('images/loginpg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}

@@ -25,6 +25,10 @@
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\Images\nflwall.png" />
+  </ItemGroup>
+
 
 
 </Project>
