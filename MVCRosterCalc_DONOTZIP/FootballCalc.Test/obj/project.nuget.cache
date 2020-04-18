@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nmHS7W/HQEOlHDEelvDyuQjCUL1tIU5bDIvoYaEqovT3Wvrmk80eq4I4HT90rEtkMiTu3NtwgzSBLJrmn1973Q==",
+  "dgSpecHash": "ad2lj9FhCrHOPokmK69rXrfQoW5CTz+SjCGVds/S9KsjGAS28rpkozbtD2EwHnmEJKRDcRJTwXlkmjQTCB0WgQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\deyas\\Documents\\GitHub\\Fantasy-Football-Generator\\MVCRosterCalc_DONOTZIP\\FootballCalc.Test\\FootballCalc.Test.csproj",
   "expectedPackageFiles": [
@@ -26,10 +26,12 @@
     "C:\\Users\\deyas\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.3\\microsoft.entityframeworkcore.3.1.3.nupkg.sha512",
     "C:\\Users\\deyas\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.3\\microsoft.entityframeworkcore.abstractions.3.1.3.nupkg.sha512",
     "C:\\Users\\deyas\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.3\\microsoft.entityframeworkcore.analyzers.3.1.3.nupkg.sha512",
+    "C:\\Users\\deyas\\.nuget\\packages\\microsoft.entityframeworkcore.design\\3.1.3\\microsoft.entityframeworkcore.design.3.1.3.nupkg.sha512",
     "C:\\Users\\deyas\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.3\\microsoft.entityframeworkcore.relational.3.1.3.nupkg.sha512",
     "C:\\Users\\deyas\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\3.1.3\\microsoft.entityframeworkcore.sqlite.3.1.3.nupkg.sha512",
     "C:\\Users\\deyas\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\3.1.3\\microsoft.entityframeworkcore.sqlite.core.3.1.3.nupkg.sha512",
     "C:\\Users\\deyas\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.3\\microsoft.entityframeworkcore.sqlserver.3.1.3.nupkg.sha512",
+    "C:\\Users\\deyas\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\3.1.3\\microsoft.entityframeworkcore.tools.3.1.3.nupkg.sha512",
     "C:\\Users\\deyas\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.3\\microsoft.extensions.caching.abstractions.3.1.3.nupkg.sha512",
     "C:\\Users\\deyas\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.3\\microsoft.extensions.caching.memory.3.1.3.nupkg.sha512",
     "C:\\Users\\deyas\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.3\\microsoft.extensions.configuration.3.1.3.nupkg.sha512",

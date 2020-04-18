@@ -12,6 +12,8 @@ namespace FootballCalc.Models
                 : base(options) { }
 
         public DbSet<UserModel> Users { get; set; }
+
+        public DbSet<Players> players { get; set; }
        
     }
     }

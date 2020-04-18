@@ -14,7 +14,6 @@ namespace FootballCalc.Controllers
         {
             repository = repo;
         }
-
         public ViewResult List() => View(repository.Users);
         
     }

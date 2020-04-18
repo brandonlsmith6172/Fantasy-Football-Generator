@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using FootballCalc.Data;
 using Microsoft.EntityFrameworkCore;
 using FootballCalc.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -28,18 +27,16 @@ namespace FootballCalc
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IFootballRepository, FakeFootballRepository>();
             services.AddMvc();
-            //services.AddControllersWithViews();
-            //services.AddDbContext<FootballCalcContext>(options =>
-            //options.UseSqlServer(Configuration.GetConnectionString("FootballCalcContext")));
+            services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("FootballCalcContext")));
             //services.AddTransient<IFootballRepository>();
 
             ////services.AddDbContext<FootballCalcContext>(options =>
             ////        options.UseSqlServer(Configuration.GetConnectionString("FootballCalcContext")));
             ////services.AddTransient<IFootballRepository, FakeFootballRepository>();
             ////services.AddMvc();
-            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

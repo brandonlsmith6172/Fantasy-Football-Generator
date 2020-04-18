@@ -5,16 +5,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using FootballCalc.Data;
 using FootballCalc.Models;
 
 namespace FootballCalc.Controllers
 {
     public class PlayersController : Controller
     {
-        private readonly FootballCalcContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public PlayersController(FootballCalcContext context)
+        public PlayersController(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -22,7 +21,7 @@ namespace FootballCalc.Controllers
         // GET: Players
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Players.ToListAsync());
+            return View(await _context.players.ToListAsync());
         }
 
         // GET: Players/Details/5
@@ -33,7 +32,7 @@ namespace FootballCalc.Controllers
                 return NotFound();
             }
 
-            var players = await _context.Players
+            var players = await _context.players
                 .FirstOrDefaultAsync(m => m.PlayerName == id);
             if (players == null)
             {
@@ -73,7 +72,7 @@ namespace FootballCalc.Controllers
                 return NotFound();
             }
 
-            var players = await _context.Players.FindAsync(id);
+            var players = await _context.players.FindAsync(id);
             if (players == null)
             {
                 return NotFound();
@@ -124,7 +123,7 @@ namespace FootballCalc.Controllers
                 return NotFound();
             }
 
-            var players = await _context.Players
+            var players = await _context.players
                 .FirstOrDefaultAsync(m => m.PlayerName == id);
             if (players == null)
             {
@@ -139,15 +138,15 @@ namespace FootballCalc.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            var players = await _context.Players.FindAsync(id);
-            _context.Players.Remove(players);
+            var players = await _context.players.FindAsync(id);
+            _context.players.Remove(players);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool PlayersExists(string id)
         {
-            return _context.Players.Any(e => e.PlayerName == id);
+            return _context.players.Any(e => e.PlayerName == id);
         }
     }
 }

@@ -8,6 +8,7 @@ namespace FootballCalc.Models
 {
     public class UserModel
     {
+        [Key]
         [Required]
         public int Userid { get; set; }
         [Required(ErrorMessage = "First name is required.")]

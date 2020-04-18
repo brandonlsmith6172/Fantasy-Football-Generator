@@ -1,0 +1,56 @@
+﻿@model FootballCalc.Models.UserModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>New User</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="First_Name" class="control-label">First Name</label>
+                <input asp-for="First_Name" class="form-control" />
+                <span asp-validation-for="First_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Last_Name" class="control-label">Last Name</label>
+                <input asp-for="Last_Name" class="form-control" />
+                <span asp-validation-for="Last_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Username" class="control-label"></label>
+                <input asp-for="Username" class="form-control" />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date_Of_Birth" class="control-label">Date Of Birth</label>
+                <input asp-for="Date_Of_Birth" class="form-control" />
+                <span asp-validation-for="Date_Of_Birth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email_Address" class="control-label">Email Address</label>
+                <input asp-for="Email_Address" class="form-control" />
+                <span asp-validation-for="Email_Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a href="./Home/Index">Home</a>
+    @*<form method="POST" action="Home/Index.cshtml"></form>*@
+    @*<a href="./">Home</a>*@
+    @*<a asp-controller="Home" asp-action="Home/Index"></a>*@
+</div>
+
