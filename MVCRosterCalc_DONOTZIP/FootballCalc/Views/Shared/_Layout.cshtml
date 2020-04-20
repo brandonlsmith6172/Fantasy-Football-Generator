@@ -4,96 +4,112 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Fantasy Roster Calculator</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
-    <style>
-        body {
-            background-image: url('images/nflwall.png');
-            background-repeat: no-repeat;
-            background-size:contain;
-            background-position: center;
-            background-attachment: fixed;
-        }
-        * {
-            box-sizing: border-box;
-        }
-        .header {
-            background-color: darkcyan;
-            padding: 20px;
-            text-align: center;
-        }
-        .topnav {
-            overflow: hidden;
-            background-color: black;
-        }
-        .topnav a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        .topnav a:hover {
-            background-color: black;
-            color: black;
-        }
-        .column {
-            float: left;
-            width: 33.33%;
-        }
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-        .footer {
-            background-color: black;
-            text-align: center;
-            padding: 6px;
-        }
-    </style>
+    <link href="~/css/site.css" rel="stylesheet" />
+
 </head>
 <body>
-    <div class="wrapper">
+    <div class="container">
+        <header>
+            <h1 class="proj-title">Fantasy Sports Calculator</h1>
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="~/Images/ham.svg" alt="Toggle Menu" class="menu" id="menu" />
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li class="exit-btn hide-desktop" id="exit"><img src="~/Images/exit.svg" alt="Exit Menu" /></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="UserModels" asp-action="Create">Register</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Login">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <img class="bouncelogo" src="~/Images/FootballLogo.png" />
+            <p>Effeciently Calculate Your Fantasy Sports Team Rosters.<br />Produce Quality Teams You Can Use throughout The Season.<br />Access. Anywhere. Anytime.</p>
+        </section>
     </div>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="middle-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="~/Images/RosterIcon.png" alt="Roster Icon" />
+                    <p>Pick Players For Your Roster.</p>
+                </li>
+                <li>
+                    <img src="~/Images/ClockIcon.png" alt="Clock Icon" />
+                    <p>Save Time Making Your Roster.</p>
+                </li>
+                <li>
+                    <img src="~/Images/LocationIcon.png" alt="Location Icon" />
+                    <p>Access Your Team Anywhere And Anytime.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="~/Images/BrandonS.png" />
+                        <blockquote>The Merge Master. I like it. Yes.</blockquote>
+                        <figcaption>- Brandon Smith</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="~/Images/AustinM.png" />
+                        <blockquote>Keeping It Simple. Brooo.</blockquote>
+                        <figcaption>- Austin Moore</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="~/Images/AJL.png" />
+                        <blockquote>Web Design. Im getting errors.</blockquote>
+                        <figcaption>- AJ Lopez</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="~/Images/ChrisS.png" />
+                        <blockquote>Hash Codes. This weekend is a blur to me.</blockquote>
+                        <figcaption>- Chrisopher Son</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="~/Images/AnthonyL.png" />
+                        <blockquote>Front Rower. It's Beer30</blockquote>
+                        <figcaption>- Anthony Logan</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Fantasy Roster Calculator</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="UserModels" asp-action="Create">Register</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+                <img src="~/Images/EmbryRiddleLogo.png" class="logo" />
+                <img src="~/Images/MicrosoftLogo1.png" class="logo" />
+                <p class="disclaimer">This Project Is Made For School Project By Microsoft Software And Systems Academy Students</p>
+                <ul class="foot-links">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </footer>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - Fantasy Roster Calculator - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
