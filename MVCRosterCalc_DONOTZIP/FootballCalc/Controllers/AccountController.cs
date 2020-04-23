@@ -9,11 +9,11 @@ using FootballCalc.Models;
 
 namespace FootballCalc.Controllers
 {
-    public class UserModelsController : Controller
+    public class AccountController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public UserModelsController(ApplicationDbContext context)
+        public AccountController(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -33,7 +33,7 @@ namespace FootballCalc.Controllers
             }
 
             var userModel = await _context.Users
-                .FirstOrDefaultAsync(m => m.Userid == id);
+                .FirstOrDefaultAsync(m => m.UserID == id);
             if (userModel == null)
             {
                 return NotFound();
@@ -43,7 +43,7 @@ namespace FootballCalc.Controllers
         }
 
         // GET: UserModels/Create
-        public IActionResult Create()
+        public IActionResult Register()
         {
             return View();
             
@@ -54,7 +54,7 @@ namespace FootballCalc.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Userid,First_Name,Last_Name,Username,Password,Date_Of_Birth,Email_Address")] UserModel userModel)
+        public async Task<IActionResult> Register([Bind("UserID,FirstName,LastName,UserName,UserPassword,Date_Of_Birth,Email")] UserModel userModel)
         {
             if (ModelState.IsValid)
             {
@@ -62,7 +62,7 @@ namespace FootballCalc.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction("Index", "Home");
             }
-            return RedirectToAction("Index", "Home");
+            return View(userModel);
         }
 
         // GET: UserModels/Edit/5
@@ -86,9 +86,9 @@ namespace FootballCalc.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Userid,First_Name,Last_Name,Username,Password,Date_Of_Birth,Email_Address")] UserModel userModel)
+        public async Task<IActionResult> Edit(int id, [Bind("UserID,FirstName,LastName,UserName,UserPassword,Date_Of_Birth,Email")] UserModel userModel)
         {
-            if (id != userModel.Userid)
+            if (id != userModel.UserID)
             {
                 return NotFound();
             }
@@ -102,7 +102,7 @@ namespace FootballCalc.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!UserModelExists(userModel.Userid))
+                    if (!UserModelExists(userModel.UserID))
                     {
                         return NotFound();
                     }
@@ -125,7 +125,7 @@ namespace FootballCalc.Controllers
             }
 
             var userModel = await _context.Users
-                .FirstOrDefaultAsync(m => m.Userid == id);
+                .FirstOrDefaultAsync(m => m.UserID == id);
             if (userModel == null)
             {
                 return NotFound();
@@ -147,7 +147,19 @@ namespace FootballCalc.Controllers
 
         private bool UserModelExists(int id)
         {
-            return _context.Users.Any(e => e.Userid == id);
+            return _context.Users.Any(e => e.UserID == id);
+        }
+        public IActionResult Login()
+        {
+            return View();
+        }
+        public IActionResult LoginFailed()
+        {
+            return View();
+        }
+        public IActionResult LoginValidated()
+        {
+            return View();
         }
     }
 }

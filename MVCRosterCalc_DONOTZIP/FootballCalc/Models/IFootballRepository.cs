@@ -8,10 +8,10 @@ namespace FootballCalc.Models
     public interface IFootballRepository
     {
         IQueryable<UserModel> Users { get; }
-        //IQueryable<UserModel> Username { get; }
+        //IQueryable<UserModel> UserName { get; }
         //IQueryable<UserModel> Password { get; }
-        //IQueryable<UserModel> First_Name { get; }
-        //IQueryable<UserModel> Last_Name { get; }
+        //IQueryable<UserModel> FirstName { get; }
+        //IQueryable<UserModel> LastName { get; }
         //IQueryable<UserModel> Date_Of_Birth { get; }
         //IQueryable<UserModel> Email { get; }
 

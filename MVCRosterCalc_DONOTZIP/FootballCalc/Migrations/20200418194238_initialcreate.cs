@@ -11,8 +11,8 @@ namespace FootballCalc.Migrations
                 columns: table => new
                 {
                     PlayerName = table.Column<string>(nullable: false),
-                    PlayerTeam = table.Column<string>(nullable: true),
-                    PlayerCost = table.Column<int>(nullable: false)
+                    //PlayerTeam = table.Column<string>(nullable: true),
+                    PlayerSalary = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -23,25 +23,25 @@ namespace FootballCalc.Migrations
                 name: "Users",
                 columns: table => new
                 {
-                    Userid = table.Column<int>(nullable: false)
+                    UserID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    First_Name = table.Column<string>(nullable: false),
-                    Last_Name = table.Column<string>(nullable: false),
-                    Username = table.Column<string>(nullable: false),
-                    Password = table.Column<string>(nullable: false),
+                    FirstName = table.Column<string>(nullable: false),
+                    LastName = table.Column<string>(nullable: false),
+                    UserName = table.Column<string>(nullable: false),
+                    UserPassword = table.Column<string>(nullable: false),
                     Date_Of_Birth = table.Column<string>(nullable: false),
-                    Email_Address = table.Column<string>(nullable: false)
+                    Email = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Users", x => x.Userid);
+                    table.PrimaryKey("PK_Users", x => x.UserID);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "players");
+                name: "NewRosters");
 
             migrationBuilder.DropTable(
                 name: "Users");

@@ -20,9 +20,9 @@ namespace FootballCalc.Models
 
         //public IQueryable<UserModel> Password => throw new NotImplementedException();
 
-        //public IQueryable<UserModel> First_Name => throw new NotImplementedException();
+        //public IQueryable<UserModel> FirstName => throw new NotImplementedException();
 
-        //public IQueryable<UserModel> Last_Name => throw new NotImplementedException();
+        //public IQueryable<UserModel> LastName => throw new NotImplementedException();
 
         //public IQueryable<UserModel> Date_Of_Birth => throw new NotImplementedException();
 

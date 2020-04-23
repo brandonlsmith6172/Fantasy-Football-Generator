@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Fantasy Roster Calculator</title>
+    <link href="~/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/css/site.css" rel="stylesheet" />
 
 </head>
@@ -19,8 +20,8 @@
                 <ul class="show-desktop hide-mobile" id="nav">
                     <li class="exit-btn hide-desktop" id="exit"><img src="~/Images/exit.svg" alt="Exit Menu" /></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="UserModels" asp-action="Create">Register</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Login">Login</a></li>
+                    <li><a asp-area="" asp-controller="Account" asp-action="Register">Register</a></li>
+                    <li><a asp-area="" asp-controller="Account" asp-action="Login">Login</a></li>
                 </ul>
             </nav>
         </header>
@@ -47,6 +48,12 @@
                 </li>
             </ul>
         </div>
+    </div>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
     </div>
     <div class="bottom-container">
         <div class="container">
@@ -105,11 +112,6 @@
         </div>
     </footer>
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

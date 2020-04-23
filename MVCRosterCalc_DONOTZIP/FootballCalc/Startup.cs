@@ -29,7 +29,7 @@ namespace FootballCalc
         {
             services.AddMvc();
             services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("FootballCalcContext")));
+            options.UseSqlServer(Configuration["ConnectionStrings:FootballCalcContext"]));
             //services.AddTransient<IFootballRepository>();
 
             ////services.AddDbContext<FootballCalcContext>(options =>

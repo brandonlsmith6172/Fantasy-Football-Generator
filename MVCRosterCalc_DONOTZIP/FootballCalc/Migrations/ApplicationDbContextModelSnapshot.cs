@@ -23,11 +23,11 @@ namespace FootballCalc.Migrations
                     b.Property<string>("PlayerName")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("PlayerCost")
+                    b.Property<int>("PlayerSalary")
                         .HasColumnType("int");
 
-                    b.Property<string>("PlayerTeam")
-                        .HasColumnType("nvarchar(max)");
+                    //b.Property<string>("PlayerTeam")
+                    //    .HasColumnType("nvarchar(max)");
 
                     b.HasKey("PlayerName");
 
@@ -36,7 +36,7 @@ namespace FootballCalc.Migrations
 
             modelBuilder.Entity("FootballCalc.Models.UserModel", b =>
                 {
-                    b.Property<int>("Userid")
+                    b.Property<int>("UserID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -45,27 +45,27 @@ namespace FootballCalc.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Email_Address")
+                    b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("First_Name")
+                    b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Last_Name")
+                    b.Property<string>("LastName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Password")
+                    b.Property<string>("UserPassword")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Username")
+                    b.Property<string>("UserName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Userid");
+                    b.HasKey("UserID");
 
                     b.ToTable("Users");
                 });
