@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Fantasy Roster Calculator</title>
+    <link href="~/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="proj-title">Fantasy Sports Calculator</h1>
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="~/Images/ham.svg" alt="Toggle Menu" class="menu" id="menu" />
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li class="exit-btn hide-desktop" id="exit"><img src="~/Images/exit.svg" alt="Exit Menu" /></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Account" asp-action="Register">Register</a></li>
+                    <li><a asp-area="" asp-controller="Account" asp-action="Login">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <img class="bouncelogo" src="~/Images/FootballLogo.png" />
+            <p>Effeciently Calculate Your Fantasy Sports Team Rosters.<br />Produce Quality Teams You Can Use throughout The Season.<br />Access. Anywhere. Anytime.</p>
+        </section>
+    </div>
+    <div class="middle-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="~/Images/RosterIcon.png" alt="Roster Icon" />
+                    <p>Pick Players For Your Roster.</p>
+                </li>
+                <li>
+                    <img src="~/Images/ClockIcon.png" alt="Clock Icon" />
+                    <p>Save Time Making Your Roster.</p>
+                </li>
+                <li>
+                    <img src="~/Images/LocationIcon.png" alt="Location Icon" />
+                    <p>Access Your Team Anywhere And Anytime.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <div class="bottom-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <a href="Developers/Brandon">
+                            <img src="~/Images/BrandonS.png" />
+                        </a>
+                            <blockquote>The Merge Master. I like it. Yes.</blockquote>
+                            <figcaption>- Brandon Smith</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="Developers/Austin">
+                        <img src="~/Images/AustinM.png" />
+                        </a>
+                        <blockquote>Keeping It Simple. Brooo.</blockquote>
+                        <figcaption>- Austin Moore</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="Developers/AJ">
+                        <img src="~/Images/AJL.png" />
+                            </a>
+                        <blockquote>Web Design. Im getting errors.</blockquote>
+                        <figcaption>- AJ Lopez</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="Developers/Christopher">
+                        <img src="~/Images/ChrisS.png" />
+                            </a>
+                        <blockquote>Hash Codes. This weekend is a blur to me.</blockquote>
+                        <figcaption>- Chrisopher Son</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <a href="Developers/Anthony">
+                        <img src="~/Images/AnthonyL.png" />
+                            </a>
+                        <blockquote>Front Rower. It's Beer30</blockquote>
+                        <figcaption>- Anthony Logan</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <img src="~/Images/EmbryRiddleLogo.png" class="logo" />
+                <img src="~/Images/MicrosoftLogo1.png" class="logo" />
+                <p class="disclaimer">This Project Is Made For School Project By Microsoft Software And Systems Academy Students</p>
+                <ul class="foot-links">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
