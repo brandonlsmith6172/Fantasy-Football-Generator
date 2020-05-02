@@ -1,0 +1,7 @@
+C:\Users\deyas\source\repos\fakefootball\bin\Debug\fakefootball.exe.config
+C:\Users\deyas\source\repos\fakefootball\bin\Debug\fakefootball.exe
+C:\Users\deyas\source\repos\fakefootball\bin\Debug\fakefootball.pdb
+C:\Users\deyas\source\repos\fakefootball\obj\Debug\fakefootball.csprojAssemblyReference.cache
+C:\Users\deyas\source\repos\fakefootball\obj\Debug\fakefootball.csproj.CoreCompileInputs.cache
+C:\Users\deyas\source\repos\fakefootball\obj\Debug\fakefootball.exe
+C:\Users\deyas\source\repos\fakefootball\obj\Debug\fakefootball.pdb
