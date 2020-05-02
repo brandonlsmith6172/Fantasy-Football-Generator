@@ -13,8 +13,10 @@ namespace FootballCalc.Models
         public int PlayerID { get; set; }
         public int RosterID { get; set; }
         public string PlayerName { get; set; }
+        [StringLength(50)]
         [NotMapped]
         public string PlayerTeam { get; set; }
+        [StringLength(50)]
         public int PlayerSalary { get; set; }
 
     }

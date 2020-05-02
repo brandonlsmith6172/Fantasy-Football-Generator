@@ -25,7 +25,7 @@ namespace FootballCalc.Controllers
         }
 
         // GET: Players/Details/5
-        public async Task<IActionResult> Details(string id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {
@@ -33,7 +33,7 @@ namespace FootballCalc.Controllers
             }
 
             var players = await _context.players
-                .FirstOrDefaultAsync(m => m.PlayerName == id);
+                .FirstOrDefaultAsync(m => m.PlayerID == id);
             if (players == null)
             {
                 return NotFound();
@@ -49,11 +49,11 @@ namespace FootballCalc.Controllers
         }
 
         // POST: Players/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PlayerName,PlayerTeam,PlayerSalary")] Players players)
+        public async Task<IActionResult> Create([Bind("PlayerID,RosterID,PlayerName,PlayerSalary")] Players players)
         {
             if (ModelState.IsValid)
             {
@@ -65,7 +65,7 @@ namespace FootballCalc.Controllers
         }
 
         // GET: Players/Edit/5
-        public async Task<IActionResult> Edit(string id)
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
             {
@@ -81,13 +81,13 @@ namespace FootballCalc.Controllers
         }
 
         // POST: Players/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("PlayerName,PlayerTeam,PlayerSalary")] Players players)
+        public async Task<IActionResult> Edit(int id, [Bind("PlayerID,RosterID,PlayerName,PlayerSalary")] Players players)
         {
-            if (id != players.PlayerName)
+            if (id != players.PlayerID)
             {
                 return NotFound();
             }
@@ -101,7 +101,7 @@ namespace FootballCalc.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PlayersExists(players.PlayerName))
+                    if (!PlayersExists(players.PlayerID))
                     {
                         return NotFound();
                     }
@@ -116,7 +116,7 @@ namespace FootballCalc.Controllers
         }
 
         // GET: Players/Delete/5
-        public async Task<IActionResult> Delete(string id)
+        public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
             {
@@ -124,7 +124,7 @@ namespace FootballCalc.Controllers
             }
 
             var players = await _context.players
-                .FirstOrDefaultAsync(m => m.PlayerName == id);
+                .FirstOrDefaultAsync(m => m.PlayerID == id);
             if (players == null)
             {
                 return NotFound();
@@ -136,7 +136,7 @@ namespace FootballCalc.Controllers
         // POST: Players/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(string id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var players = await _context.players.FindAsync(id);
             _context.players.Remove(players);
@@ -144,9 +144,9 @@ namespace FootballCalc.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool PlayersExists(string id)
+        private bool PlayersExists(int id)
         {
-            return _context.players.Any(e => e.PlayerName == id);
+            return _context.players.Any(e => e.PlayerID == id);
         }
     }
 }

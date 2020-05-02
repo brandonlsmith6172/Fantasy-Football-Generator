@@ -700,3 +700,5 @@ C:\Users\Son\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\
 C:\Users\Son\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc.Test\obj\Debug\netcoreapp3.1\FootballCalc.Test.dll
 C:\Users\Son\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc.Test\obj\Debug\netcoreapp3.1\FootballCalc.Test.pdb
 C:\Users\Son\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc.Test\obj\Debug\netcoreapp3.1\FootballCalc.Test.genruntimeconfig.cache
+C:\Users\chjay\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc.Test\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\chjay\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc.Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
