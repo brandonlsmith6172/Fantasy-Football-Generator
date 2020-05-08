@@ -43,8 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EnumPositions.cs" />
     <Compile Include="Player.cs" />
-    <Compile Include="PositionClass.cs" />
+    <Compile Include="Roster.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

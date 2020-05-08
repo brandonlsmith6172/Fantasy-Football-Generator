@@ -8,11 +8,12 @@ namespace fakefootball
 {
     public class Player
     {
-        public PlayerPosition Position { get; set; }
+        //public PlayerPosition Position { get; set; }
+        public int Position { get; set; }
         public string PlayerName { get; set; }
 
         public string PlayerTeam { get; set; }
-        
+
         public int Salary { get; set; }
 
         public override string ToString()
