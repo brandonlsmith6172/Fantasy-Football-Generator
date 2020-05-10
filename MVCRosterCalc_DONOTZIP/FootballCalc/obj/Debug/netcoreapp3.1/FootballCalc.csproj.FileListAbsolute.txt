@@ -1131,3 +1131,8 @@ C:\Users\moore\OneDrive\Documents\GitHub2\Fantasy-Football-Generator\MVCRosterCa
 C:\Users\moore\OneDrive\Documents\GitHub2\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\Razor\Views\Developers\Christopher.cshtml.g.cs
 C:\Users\moore\OneDrive\Documents\GitHub2\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\Razor\Views\Home\List.cshtml.g.cs
 C:\Users\moore\OneDrive\Documents\GitHub2\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_HomeLayout.cshtml.g.cs
+C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\Razor\Views\AddPlayers\Create.cshtml.g.cs
+C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\Razor\Views\AddPlayers\Delete.cshtml.g.cs
+C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\Razor\Views\AddPlayers\Details.cshtml.g.cs
+C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\Razor\Views\AddPlayers\Edit.cshtml.g.cs
+C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc\obj\Debug\netcoreapp3.1\Razor\Views\AddPlayers\Index.cshtml.g.cs
