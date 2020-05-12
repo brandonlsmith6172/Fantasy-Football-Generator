@@ -3,28 +3,35 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewData["Title"] = "Login";
 }
-<h1>@ViewData["Title"]</h1>
-<body class="login-pg">
-<p>Please enter your UserName and password. If you do not have an account, please click register.</p>
-<label for="UserName">UserName:</label>
-<br>
-<input type="text" id="UserName" name="UserName">
-<br>
-<label for="PassWord">Password:</label>
-<br>
-<input type="text" id="PassWord" name="Password">
-<br/>
 
-@*Need data validation*@
-<input type="submit" value="Submit">
-@*IF data validation is true*@
-@*Go to login successful, redirecting to roster page*@
-@*IF data validation is false*@
+    
+        <h1 class="text-faded">@ViewData["Title"]</h1>
+        <body class="login-pg">
+                <div class="row, text-faded">
+                    <form>
+                        <p>Please enter your Username and Password. If you do not have an account, please click register.</p>
 
+                        <label for="UserName" class="control-label">Username:</label>
+                        <div class="form-group">
+                            <input type="text" id="UserName" name="UserName">
+                        </div>
 
-@*Login failed, please try again*@
+                        <label for="PassWord" class="control-label">Password:</label>
+                        <div class="form-group">
+                            <input type="text" id="PassWord" name="Password">
+                        </div>
+                        <div class="from-group">
+                            @*Need data validation*@
+                            <input type="submit" value="Submit" class="btn btn-primary">
+                            @*IF data validation is true*@
+                            @*Go to login successful, redirecting to roster page*@
+                            @*IF data validation is false*@
+                            @*Login failed, please try again*@
+                        </div>
 
-<btn class="nav-item">
-    <a class="nav-link text-dark" asp-controller="Home" asp-action="Register">Register</a>
-</btn>
-</body>
+                        <div class="form-group">
+                            <a asp-controller="Account" asp-action="Register" class="btn btn-primary">Register</a>
+                        </div>
+                    </form>
+                </div>
+        </body>

@@ -5,120 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Fantasy Roster Calculator</title>
     <link href="~/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/css/site.css" rel="stylesheet" />
-
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <link href="~/css/business-casual.css" rel="stylesheet" />
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1 class="proj-title">Fantasy Sports Calculator</h1>
 
-            <nav>
-                <a href="#" class="hide-desktop">
-                    <img src="~/Images/ham.svg" alt="Toggle Menu" class="menu" id="menu" />
-                </a>
-                <ul class="show-desktop hide-mobile" id="nav">
-                    <li class="exit-btn hide-desktop" id="exit"><img src="~/Images/exit.svg" alt="Exit Menu" /></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Account" asp-action="Register">Register</a></li>
-                    <li><a asp-area="" asp-controller="Account" asp-action="Login">Login</a></li>
-                </ul>
-            </nav>
-        </header>
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+        <span class="site-heading-upper text-primary mb-3">MSSA Group 3 Project</span>
+        <span class="site-heading-lower">Fantasy Sports Calculator</span>
+    </h1>
 
-        <section>
-            <img class="bouncelogo" src="~/Images/FootballLogo.png" />
-            <p>Effeciently Calculate Your Fantasy Sports Team Rosters.<br />Produce Quality Teams You Can Use throughout The Season.<br />Access. Anywhere. Anytime.</p>
-        </section>
-    </div>
-    <div class="middle-container">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
         <div class="container">
-            <ul>
-                <li>
-                    <img src="~/Images/RosterIcon.png" alt="Roster Icon" />
-                    <p>Pick Players For Your Roster.</p>
-                </li>
-                <li>
-                    <img src="~/Images/ClockIcon.png" alt="Clock Icon" />
-                    <p>Save Time Making Your Roster.</p>
-                </li>
-                <li>
-                    <img src="~/Images/LocationIcon.png" alt="Location Icon" />
-                    <p>Access Your Team Anywhere And Anytime.</p>
-                </li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
 
+    <!--Body Page Recall-->
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-    <div class="bottom-container">
+
+    <!--Middle Container-->
+    <section class="page-section clearfix">
         <div class="container">
-            <ul>
-                <li>
-                    <figure>
-                        <a href="Developers/Brandon">
-                            <img src="~/Images/BrandonS.png" />
-                        </a>
-                            <blockquote>The Merge Master. I like it. Yes.</blockquote>
-                            <figcaption>- Brandon Smith</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a href="Developers/Austin">
-                        <img src="~/Images/AustinM.png" />
-                        </a>
-                        <blockquote>Keeping It Simple. Brooo.</blockquote>
-                        <figcaption>- Austin Moore</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a href="Developers/AJ">
-                        <img src="~/Images/AJL.png" />
-                            </a>
-                        <blockquote>Web Design. Im getting errors.</blockquote>
-                        <figcaption>- AJ Lopez</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a href="Developers/Christopher">
-                        <img src="~/Images/ChrisS.png" />
-                            </a>
-                        <blockquote>Hash Codes. This weekend is a blur to me.</blockquote>
-                        <figcaption>- Chrisopher Son</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <a href="Developers/Anthony">
-                        <img src="~/Images/AnthonyL.png" />
-                            </a>
-                        <blockquote>Front Rower. It's Beer30</blockquote>
-                        <figcaption>- Anthony Logan</figcaption>
-                    </figure>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-
-    <footer>
-        <div class="footer-container">
-            <div class="container">
-                <img src="~/Images/EmbryRiddleLogo.png" class="logo" />
-                <img src="~/Images/MicrosoftLogo1.png" class="logo" />
-                <p class="disclaimer">This Project Is Made For School Project By Microsoft Software And Systems Academy Students</p>
-                <ul class="foot-links">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
-                </ul>
+            <div class="intro">
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="~/Images/DarkFootball.png" alt="">
+                <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Plug N' Play</span>
+                        <span class="section-heading-lower">User Friendly</span>
+                    </h2>
+                    <p class="mb-3">
+                        Plug in your top picked players. Enter your salary cap. Pick the best roster. Dominate.
+                    </p>
+                    <div class="intro-button mx-auto">
+                        <a class="btn btn-primary btn-xl" asp-area="" asp-controller="Account" asp-action="Register">Are You Ready?</a>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!--Bottom Section-->
+    <section class="page-section cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <div class="cta-inner text-center rounded">
+                        <h2 class="section-heading mb-4">
+                            <span class="section-heading-upper">Our Goal</span>
+                            <span class="section-heading-lower"></span>
+                        </h2>
+                        <p class="mb-0">Our goal is to make any fantasy sports team composition easier for you. Our Plug N' Play interface is designed to produce multiple team compositions. Get possible team compositions you may not have seen during your planning process. Whether it's predictions or statistic, Get more results from your research.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer Call-->
+    <footer class="footer text-faded text-center py-5">
+        <div class="container">
+            <p class="m-0 small">Copyright &copy; Your Website 2019</p>
         </div>
     </footer>
 
