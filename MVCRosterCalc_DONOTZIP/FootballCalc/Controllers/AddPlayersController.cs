@@ -53,7 +53,7 @@ namespace FootballCalc.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PlayerID,RosterID,PlayerName,PlayerSalary")] Players players)
+        public async Task<IActionResult> Create([Bind("PlayerID,RosterID,PlayerName,PlayerSalary,PlayerPosition,PlayerTeam")] Players players)
         {
             if (ModelState.IsValid)
             {
@@ -63,7 +63,7 @@ namespace FootballCalc.Controllers
             }
             return View(players);
         }
-
+       
         // GET: AddPlayers/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {

@@ -18,6 +18,10 @@ namespace FootballCalc.Models
 
         public IQueryable<UserModel> Users => context.Users;
 
+        public IQueryable<Roster> rosters { get; set; }
+        public IQueryable<Players> players { get; set; }
+
+
         //public IQueryable<UserModel> Password => throw new NotImplementedException();
 
         //public IQueryable<UserModel> FirstName => throw new NotImplementedException();

@@ -1,0 +1,7 @@
+Week 17
++completed new website layout with better flow and user experience
++fixed some small issues with the web page
++created developer pages
+
+-Need to implement algorithm into program
+-need input for developer pages

@@ -45,6 +45,7 @@ namespace FootballCalc.Controllers
         // GET: Players/Create
         public IActionResult Create()
         {
+
             return View();
         }
 

@@ -14,6 +14,8 @@ namespace FootballCalc.Models
         public DbSet<UserModel> Users { get; set; }
 
         public DbSet<Players> players { get; set; }
+
+        public DbSet<Roster> rosters { get; set; }
        
     }
     }
