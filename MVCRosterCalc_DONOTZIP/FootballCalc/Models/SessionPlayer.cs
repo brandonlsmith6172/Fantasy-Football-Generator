@@ -29,7 +29,7 @@ namespace FootballCalc.Models
         public override void RemoveLine(Players players)
         {
             base.RemoveLine(players);
-            Session.SetJson("Cart", this);
+            Session.SetJson("Players", this);
         }
         public override void Clear()
         {

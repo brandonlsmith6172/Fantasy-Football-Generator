@@ -1338,3 +1338,4 @@ C:\Users\chjay\Desktop\GitHubCopy\FootballCalc\obj\Debug\netcoreapp3.1\FootballC
 C:\Users\chjay\Desktop\GitHubCopy\FootballCalc\obj\Debug\netcoreapp3.1\FootballCalc.csproj.CopyComplete
 C:\Users\chjay\Desktop\GitHubCopy\FootballCalc\obj\Debug\netcoreapp3.1\FootballCalc.dll
 C:\Users\chjay\Desktop\GitHubCopy\FootballCalc\obj\Debug\netcoreapp3.1\FootballCalc.pdb
+C:\Users\chjay\Desktop\GitHubCopy\FootballCalc\obj\Debug\netcoreapp3.1\FootballCalc.csprojAssemblyReference.cache
