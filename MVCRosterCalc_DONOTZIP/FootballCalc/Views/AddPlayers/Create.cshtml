@@ -12,36 +12,23 @@
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            @*<div class="form-group">
-            <label asp-for="RosterID" class="control-label"></label>
-            <input asp-for="RosterID" class="form-control" />
-            <span asp-validation-for="RosterID" class="text-danger"></span>
-        </div>*@
             <div class="form-group">
-                <label asp-for="PlayerName" class="control-label">Player's Name</label>
+                <label asp-for="RosterID" class="control-label"></label>
+                <input asp-for="RosterID" class="form-control" />
+                <span asp-validation-for="RosterID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PlayerName" class="control-label"></label>
                 <input asp-for="PlayerName" class="form-control" />
                 <span asp-validation-for="PlayerName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PlayerTeam" class="control-label">Player's Team</label>
-                <input asp-for="PlayerTeam" class="form-control" />
-                <span asp-validation-for="PlayerTeam" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Position" class="control-label">Player's Position</label>
-                <input asp-for="Position" class="form-control" />
-                <span asp-validation-for="Position" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PlayerSalary" class="control-label">Salary</label>
+                <label asp-for="PlayerSalary" class="control-label"></label>
                 <input asp-for="PlayerSalary" class="form-control" />
                 <span asp-validation-for="PlayerSalary" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Add" class="btn btn-primary" />
-            </div>
-            <div class="form-group">
-                <input type="submit" value="CreateRoster" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>

@@ -18,7 +18,5 @@ namespace FootballCalc.Models
         //IQueryable<UserModel> PossibleRosters { get; }
         //IQueryable<UserModel> NewRoster { get; }
         //IQueryable<UserModel> SavedRosters { get; }
-        IQueryable<Roster> rosters { get; set; }
-        IQueryable<Players> players { get; set; }
     }
 }

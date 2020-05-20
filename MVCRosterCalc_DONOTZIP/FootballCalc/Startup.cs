@@ -1,16 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using FootballCalc.Models;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 
 namespace FootballCalc
 {
@@ -36,7 +31,13 @@ namespace FootballCalc
             ////        options.UseSqlServer(Configuration.GetConnectionString("FootballCalcContext")));
             ////services.AddTransient<IFootballRepository, FakeFootballRepository>();
             ////services.AddMvc();
-
+            
+            
+            services.AddDistributedMemoryCache();
+            services.AddScoped<Players>(sp => SessionPlayer.GetPlayers(sp));
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,9 +55,8 @@ namespace FootballCalc
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseRouting();
-
             app.UseAuthorization();
 
             //app.UseMvc(routes => {

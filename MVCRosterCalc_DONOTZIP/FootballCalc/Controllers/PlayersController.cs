@@ -21,7 +21,7 @@ namespace FootballCalc.Controllers
         // GET: Players
         public async Task<IActionResult> Index()
         {
-            return View(await _context.players.ToListAsync());
+            return View(await _context.player.ToListAsync());
         }
 
         // GET: Players/Details/5
@@ -32,7 +32,7 @@ namespace FootballCalc.Controllers
                 return NotFound();
             }
 
-            var players = await _context.players
+            var players = await _context.player
                 .FirstOrDefaultAsync(m => m.PlayerID == id);
             if (players == null)
             {
@@ -45,7 +45,6 @@ namespace FootballCalc.Controllers
         // GET: Players/Create
         public IActionResult Create()
         {
-
             return View();
         }
 
@@ -54,15 +53,15 @@ namespace FootballCalc.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PlayerID,RosterID,PlayerName,PlayerSalary")] Players players)
+        public async Task<IActionResult> Create([Bind("PlayerID,RosterID,PlayerName,PlayerSalary")] Players player)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(players);
+                _context.Add(player);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(players);
+            return View(player);
         }
 
         // GET: Players/Edit/5
@@ -73,7 +72,7 @@ namespace FootballCalc.Controllers
                 return NotFound();
             }
 
-            var players = await _context.players.FindAsync(id);
+            var players = await _context.player.FindAsync(id);
             if (players == null)
             {
                 return NotFound();
@@ -86,9 +85,9 @@ namespace FootballCalc.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("PlayerID,RosterID,PlayerName,PlayerSalary")] Players players)
+        public async Task<IActionResult> Edit(int id, [Bind("PlayerID,RosterID,PlayerName,PlayerSalary")] Players player)
         {
-            if (id != players.PlayerID)
+            if (id != player.PlayerID)
             {
                 return NotFound();
             }
@@ -97,12 +96,12 @@ namespace FootballCalc.Controllers
             {
                 try
                 {
-                    _context.Update(players);
+                    _context.Update(player);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PlayersExists(players.PlayerID))
+                    if (!PlayersExists(player.PlayerID))
                     {
                         return NotFound();
                     }
@@ -113,7 +112,7 @@ namespace FootballCalc.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(players);
+            return View(player);
         }
 
         // GET: Players/Delete/5
@@ -124,7 +123,7 @@ namespace FootballCalc.Controllers
                 return NotFound();
             }
 
-            var players = await _context.players
+            var players = await _context.player
                 .FirstOrDefaultAsync(m => m.PlayerID == id);
             if (players == null)
             {
@@ -139,15 +138,15 @@ namespace FootballCalc.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var players = await _context.players.FindAsync(id);
-            _context.players.Remove(players);
+            var players = await _context.player.FindAsync(id);
+            _context.player.Remove(players);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool PlayersExists(int id)
         {
-            return _context.players.Any(e => e.PlayerID == id);
+            return _context.player.Any(e => e.PlayerID == id);
         }
     }
 }
