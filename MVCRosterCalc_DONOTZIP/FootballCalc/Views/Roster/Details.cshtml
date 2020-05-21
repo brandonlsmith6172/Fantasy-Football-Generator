@@ -1,0 +1,41 @@
+﻿@model FootballCalc.Models.Roster
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Roster @Model.RosterID</h1>
+<b>Roster Cost: $@Model.TotalPrice().ToString("0.00")</b>
+
+<table class="table" style="color: white;">
+    <thead>
+        <tr>
+            <th>
+                Player Name
+            </th>
+            <th>
+                Player Team
+            </th>
+            <th>
+                Salary
+            </th>
+            <th>
+                Player Position
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.players)
+        {
+            <tr>
+                <td>@item.PlayerName</td>
+                <td>@item.PlayerTeam</td>
+                <td>@item.PlayerSalary</td>
+                <td>@Enum.GetName(typeof(enumPositions), @item.PlayerPosition)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Index" asp-controller="Roster">Back</a> |
+<a asp-action="Remove" asp-controller="Roster">Remove Roster?</a>

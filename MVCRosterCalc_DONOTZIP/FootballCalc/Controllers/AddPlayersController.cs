@@ -4,158 +4,147 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FootballCalc.Models;
-
+using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
 
 namespace FootballCalc.Controllers
 {
     public class AddPlayersController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly DbApiContext _context;
 
-        public AddPlayersController(ApplicationDbContext context)
+        public AddPlayersController(DbApiContext context)
         {
             _context = context;
         }
 
+        List<Players> PlayersList;
+
         // GET: AddPlayers
+        private void GetPlayerList()
+        {
+            var value = HttpContext.Session.GetString("Players");
+            if (value == null)
+            {
+                PlayersList = new List<Players>();
+            }
+            else
+            {
+                PlayersList = JsonConvert.DeserializeObject<List<Players>>(value);
+            }
+        }
+
+
         public IActionResult Index()
         {
-            List<Players> Players = new List<Players>();
-            Players player = new Players();
-            player.PlayerID = 1;
-            player.PlayerName = "Aj";
-            player.PlayerSalary = 11111;
-            player.PlayerTeam = "MSSA";
-            Players.Add(player);
-            //object Session = null;
-            //Session["Players"] = Players;
-            return View(Players);
+            GetPlayerList();
+            return View(PlayersList);
             //return View(await _context.players.ToListAsync());
         }
 
-        // GET: AddPlayers/Details/5
-        public async Task<IActionResult> Details(int? id)
+        [HttpPost, ActionName("Index")]
+        public IActionResult AddPlayer(string name, int position, string team, int salary)
         {
-            if (id == null)
+            GetPlayerList();
+            Players player = new Players
             {
-                return NotFound();
-            }
-
-            var players = await _context.player
-                .FirstOrDefaultAsync(m => m.PlayerID == id);
-            if (players == null)
-            {
-                return NotFound();
-            }
-
-            return View(players);
+                PlayerID = PlayersList.Any() ? PlayersList.Max(p => p.PlayerID) + 1 : 1,
+                PlayerName = name,
+                PlayerPosition = position,
+                PlayerTeam = team,
+                PlayerSalary = salary
+            };
+            PlayersList.Add(player);
+            HttpContext.Session.SetString("Players", JsonConvert.SerializeObject(PlayersList));
+            return RedirectToAction("Index");
         }
 
-        // GET: AddPlayers/Create
-        public IActionResult Create()
+        [ActionName("Index")]
+        [HttpGet("{id}")]
+        public ActionResult RemovePlayer(int id)
         {
+            GetPlayerList();
+            PlayersList.Remove(PlayersList.FirstOrDefault(p => p.PlayerID == id));
+            HttpContext.Session.SetString("Players", JsonConvert.SerializeObject(PlayersList));
+            return RedirectToAction("Index");
+        }
+
+
+        // GET: AddPlayers/Delete
+        public IActionResult Delete()
+        {
+            GetPlayerList();
+            if (PlayersList == null)
+            {
+                return RedirectToAction("Index");
+            }
+
             return View();
         }
 
-        // POST: AddPlayers/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PlayerID,RosterID,PlayerName,PlayerSalary")] Players players)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(players);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(players);
-        }
-
-        // GET: AddPlayers/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var players = await _context.player.FindAsync(id);
-            if (players == null)
-            {
-                return NotFound();
-            }
-            return View(players);
-        }
-
-        // POST: AddPlayers/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("PlayerID,RosterID,PlayerName,PlayerSalary")] Players player)
-        {
-            if (id != player.PlayerID)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(player);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!PlayersExists(player.PlayerID))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(player);
-        }
-
-        // GET: AddPlayers/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var players = await _context.player
-                .FirstOrDefaultAsync(m => m.PlayerID == id);
-            if (players == null)
-            {
-                return NotFound();
-            }
-
-            return View(players);
-        }
-
         // POST: AddPlayers/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public IActionResult DeleteConfirmed()
         {
-            var players = await _context.player.FindAsync(id);
-            _context.player.Remove(players);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            PlayersList = new List<Players>();
+            HttpContext.Session.SetString("Players", JsonConvert.SerializeObject(PlayersList));
+            return RedirectToAction("Index");
         }
 
         private bool PlayersExists(int id)
         {
-            return _context.player.Any(e => e.PlayerID == id);
+            return _context.Players.Any(e => e.PlayerID == id);
+        }
+
+        [HttpPost]
+        public IActionResult CreateRosters(int budget, int qb, int wr, int te, int rb, int flex, int dsp)
+        {
+            GetPlayerList();
+            List<Roster> rosters = new List<Roster>();
+
+            var rand = new Random();
+            List<int> positionNumbers = new List<int>();
+            positionNumbers.Add(qb);
+            positionNumbers.Add(wr);
+            positionNumbers.Add(te);
+            positionNumbers.Add(rb);
+            positionNumbers.Add(flex);
+            positionNumbers.Add(dsp);
+
+            PlayersList = PlayersList.OrderBy(p => p.PlayerSalary).ToList();
+
+            for (int i = 0; i < PlayersList.Count; i++)
+            {
+                bool cont = true;
+                Roster roster = new Roster();
+
+                for (int y = i; y < PlayersList.Count; y++)
+                {
+                    Players player = PlayersList[y];
+
+                    if (roster.TotalPrice() + player.PlayerSalary > budget) continue;
+                    if (roster.NumOfPlayersForPosition(player.PlayerPosition) >= positionNumbers[player.PlayerPosition]) continue;
+
+                    roster.players.Add(player);
+                }
+
+                for (int x = 0; x < positionNumbers.Count(); x++)
+                {
+                    if (roster.NumOfPlayersForPosition(x) < positionNumbers[x])
+                        cont = false;
+                }
+
+                if (!cont) break;
+                else rosters.Add(roster);
+            }
+
+
+            HttpContext.Session.SetString("Rosters", JsonConvert.SerializeObject(rosters));
+
+            return RedirectToAction("Index", "Roster");
         }
     }
 }

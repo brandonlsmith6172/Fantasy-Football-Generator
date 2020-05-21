@@ -6,15 +6,13 @@ namespace FootballCalc.Models
 {
     public class ApplicationDbContext : DbContext
     {
-
-
-            public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-                : base(options) { }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options) { }
 
         public DbSet<UserModel> Users { get; set; }
 
         public DbSet<Players> player { get; set; }
        
     }
-    }
+}
 

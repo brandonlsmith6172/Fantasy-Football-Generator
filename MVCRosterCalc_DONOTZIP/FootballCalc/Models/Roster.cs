@@ -14,6 +14,6 @@ namespace FootballCalc.Models
 
         public int TotalPrice() => players.Count > 0 ? players.Select(p => p.PlayerSalary).Sum() : 0;
 
-        public int NumOfPlayersForPosition(int pos) => players.Where(p => p.Position == pos).Count();
+        public int NumOfPlayersForPosition(int pos) => players.Where(p => p.PlayerPosition == pos).Count();
     }
 }

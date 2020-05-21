@@ -1,0 +1,31 @@
+﻿@model IEnumerable<FootballCalc.Models.Roster>
+
+@{
+    ViewData["Title"] = "Rosters";
+}
+
+<h1>All of Your Rosters</h1>
+
+<table class="table" style="color: white;">
+    <thead>
+        <tr>
+            <th>Roster</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@for (int i = 1; i <= Model.Count(); i++)
+{
+        <tr>
+            <td>
+                Roster @i
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@i">Details</a> |
+                <a asp-action="Remove" asp-route-id="@i">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+

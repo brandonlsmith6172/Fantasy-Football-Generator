@@ -705,3 +705,8 @@ C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZI
 C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc.Test\obj\Debug\netcoreapp3.1\FootballCalc.Test.dll
 C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc.Test\obj\Debug\netcoreapp3.1\FootballCalc.Test.pdb
 C:\Users\deyas\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc.Test\obj\Debug\netcoreapp3.1\FootballCalc.Test.genruntimeconfig.cache
+C:\Users\chjay\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc.Test\bin\Debug\netcoreapp3.1\package-lock.json
+C:\Users\chjay\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc.Test\bin\Debug\netcoreapp3.1\package.json
+C:\Users\chjay\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc.Test\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\chjay\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc.Test\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\chjay\Documents\GitHub\Fantasy-Football-Generator\MVCRosterCalc_DONOTZIP\FootballCalc.Test\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll

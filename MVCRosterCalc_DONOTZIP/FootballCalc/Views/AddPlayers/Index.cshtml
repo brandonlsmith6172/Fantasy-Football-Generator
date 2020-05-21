@@ -1,6 +1,7 @@
 ﻿@model IEnumerable<FootballCalc.Models.Players>
 
 @{
+    Layout = "~/Views/Shared/_Layout.cshtml";
     ViewData["Title"] = "Index";
 }
 
@@ -14,7 +15,7 @@
         </button>
     </div>
     <!-- The Modal -->
-    <div class="modal" id="myModal">
+    <div class="modal" id="myModal" style="color: gray;">
         <div class="modal-dialog">
             <div class="modal-content">
 
@@ -26,7 +27,34 @@
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    Modal body..
+                    <form asp-action="Index">
+                        <div class="form-group">
+                            <label for="name">Player Name:</label>
+                            <input type="text" name="name" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="salary">Player Salary:</label>
+                            <input type="number" name="salary" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="team">Player Team:</label>
+                            <input type="text" name="team" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="position">Player Position:</label>
+                            <select name="position" class="form-control">
+                                <option value="0">QB</option>
+                                <option value="1">WR</option>
+                                <option value="2">TE</option>
+                                <option value="3">RB</option>
+                                <option value="4">FLEX</option>
+                                <option value="5">DSP</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Add Player" class="btn btn-primary" />
+                        </div>
+                    </form>
                 </div>
 
                 <!-- Modal footer -->
@@ -38,20 +66,20 @@
         </div>
     </div>
 </div>
-<table class="table">
+<table class="table" style="color: white;">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.PlayerName)
+                Player Name
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PlayerSalary)
+                Player Position
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PlayerSalary)
+                Player Team
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PlayerSalary)
+                Player Salary
             </th>
             <th></th>
         </tr>
@@ -60,20 +88,56 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.RosterID)
+                @Html.DisplayFor(modelItem => item.PlayerName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.PlayerName)
+                @Html.DisplayFor(modelItem => item.PlayerPosition)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlayerTeam)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.PlayerSalary)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.PlayerID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.PlayerID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.PlayerID">Delete</a>
+                <a asp-action="Index" asp-route-id="@item.PlayerID">Remove Player</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+
+
+<form asp-action="CreateRosters" method="post">
+    <div class="form-group">
+        <label for="budget">Your Budget</label>
+        <input type="number" name="budget" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="qb"># of QB's</label>
+        <input type="number" name="qb" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="wr"># of WR's</label>
+        <input type="number" name="wr" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="te"># of TE's</label>
+        <input type="number" name="te" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="rb"># of RB's</label>
+        <input type="number" name="rb" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="flex"># of Flex's</label>
+        <input type="number" name="flex" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="dsp"># of DSP's</label>
+        <input type="number" name="dsp" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create Rosters" />
+    </div>
+</form>
